@@ -22,4 +22,10 @@ app.use('/salas',router.get('/salas', async(req, res)=>{
     const resp = await salaController.get();
     res.status(200).send(resp);
 }));
+
+app.use('/', router.get('/salas', async(req, res)=>{
+    const salaController = require('./controllers/salaControllers');
+    const reso = await salaController.get();
+    res.status(200).send(resp);
+}));
 module.exports=app;

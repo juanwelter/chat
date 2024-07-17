@@ -1,5 +1,6 @@
-function listarSalas() {
- return[{nome : "Só tem gênio"}, {nome: "Vingadores do Java"}];
-}
-        
-module.exports = {listarSalas};
+const db = require("./db");
+
+let listarSalas = async ()=>{
+    let salas = await db.findAll("salas");
+    return salas;
+};
