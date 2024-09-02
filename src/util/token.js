@@ -13,8 +13,8 @@ app.use('/', router.get('/', (req, res) => {
 
 app.use('/', router.get('/sobre', (req, res, next) => {
     res.status(200).send ({
-        "nome" : "CHATINFO",
-        "autor" : "Guilherme Reinehr",
+        "nome" : "chat",
+        "autor" : "juan welter",
         "versao" : "0.1.0"
     });
 }));
